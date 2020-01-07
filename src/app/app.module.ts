@@ -16,6 +16,10 @@ import { LoginComponent } from './login/login.component';
 import { FathercontactComponent } from './fathercontact/fathercontact.component';
 import { MotherContactsComponent } from './mother-contacts/mother-contacts.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BookComponent } from './book/book.component';
+import { BookdetailsComponent } from './book/bookdetails/bookdetails.component';
+import { ReportComponent } from './report/report.component';
+import { BiodataComponent } from './biodata/biodata.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     LoginComponent,
     FathercontactComponent,
     MotherContactsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    BookComponent,
+    BookdetailsComponent,
+    ReportComponent,
+    BiodataComponent
   ],
   imports: [
     BrowserModule,

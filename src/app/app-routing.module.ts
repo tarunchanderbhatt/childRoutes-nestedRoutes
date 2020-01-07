@@ -1,3 +1,6 @@
+import { BiodataComponent } from "./biodata/biodata.component";
+import { BookdetailsComponent } from "./book/bookdetails/bookdetails.component";
+import { ReportComponent } from "./report/report.component";
 import { MotherContactsComponent } from "./mother-contacts/mother-contacts.component";
 import { FathercontactComponent } from "./fathercontact/fathercontact.component";
 import { LoginComponent } from "./login/login.component";
@@ -11,6 +14,7 @@ import { StudentContactComponent } from "./student-contact/student-contact.compo
 import { StudentClassComponent } from "./student-class/student-class.component";
 import { StudentSchoolComponent } from "./student-school/student-school.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
+import { BookComponent } from "./book/book.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "Login", pathMatch: "full" },
@@ -35,7 +39,16 @@ const routes: Routes = [
     ]
   },
   { path: "Contect", component: ServicesComponent },
+  { path: "Reports", component: ReportComponent },
   { path: "Login", component: LoginComponent },
+  { path: "book", component: BookComponent },
+  //Paremaer /:
+  { path: "bookdetails/:id", component: BookdetailsComponent },
+  {
+    path: "bookdetails/:id/:name/:price",
+    component: BookdetailsComponent
+  },
+  { path: "biodata", component: BiodataComponent },
   { path: "**", component: PageNotFoundComponent }
 ];
 

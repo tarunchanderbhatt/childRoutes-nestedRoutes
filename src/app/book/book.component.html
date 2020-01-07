@@ -1,0 +1,28 @@
+<h4 class="display-4 text-center">Obserbale.of</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">name</th>
+      <th scope="col">price</th>
+      <th scope="col">Description</th>
+      <th>Links</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of dataBooks">
+      <td>{{ data.id }}</td>
+      <td>{{ data.name }}</td>
+      <td>{{ data.price }}</td>
+      <td>{{ data.description }}</td>
+      <td>
+        <a
+          [routerLink]="['/bookdetails', data.id, data.name, data.price]"
+          class="btn btn-info"
+          >btn</a
+        >
+      </td>
+    </tr>
+  </tbody>
+</table>
